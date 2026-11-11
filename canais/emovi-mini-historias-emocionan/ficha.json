@@ -3,82 +3,83 @@
   "estrategia": {
     "nomes": [
       "Alma Animada",
-      "EmocionAumente",
-      "Eco da Emoção"
+      "Eco Emocional",
+      "Fios do Destino"
     ],
-    "nome": "Alma Animada",
+    "nome": "Eco Emocional",
     "handles": [
+      "@ecoemocional",
       "@almaanimadabr",
-      "@canalocultoia",
-      "@emocionabr"
+      "@fiosdodestinooficial"
     ],
-    "slogan": "Histórias que tocam a alma em segundos.",
-    "publico": "Adultos e jovens de 18 a 44 anos que buscam reflexão e boas histórias.",
-    "promessa": "Uma lição de vida emocionante e reviravoltas inusitadas a cada Short.",
-    "formato_short": "Animação 3D cinematográfica vertical com narrativa dramática e áudio envolvente. Termina com um gancho reflexivo que incentiva o compartilhamento.",
+    "slogan": "Histórias que tocam e transformam.",
+    "publico": "Adultos e jovens conectados que buscam histórias rápidas de superação e conexão humana.",
+    "promessa": "Em cada Short, uma jornada emocionante com reviravolta e uma reflexão profunda.",
+    "formato_short": "Um mini-filme 3D vertical de 45 segundos com gancho imediato, dilema dramático, reviravolta e mensagem final. Usa voz marcante e trilha sonora imersiva para garantir alta retenção e compartilhamento.",
     "ideias_video_longo": [
-      "A jornada completa de superação dos personagens mais queridos",
-      "Bastidores: Como criamos mundos 3D e roteiros que emocionam com IA",
-      "Compilação das melhores reviravoltas e lições de moral do canal"
+      "A Escolha de um Mendigo: Uma história completa sobre gratidão e reviravolta financeira",
+      "O Último Abraço: Como um ato de empatia salvou duas vidas no mesmo dia",
+      "Além da Aparência: A emocionante história do professor que mudou o destino de uma turma inteira"
     ],
-    "concorrencia": "Há canais de histórias fictícias em alta, mas a maioria usa visuais 2D genéricos. Este canal se diferencia pela qualidade 3D cinematográfica premium e roteiros originais focados em empatia.",
-    "rpm_estimado": "R$ 6,00 a R$ 15,00 por mil visualizações em vídeos longos (estimativa baseada no nicho de entretenimento emocional no Brasil).",
+    "concorrencia": "O nicho de histórias dramáticas em animação 3D está em alta (estilo canais gringos traduzidos), mas a concorrência nacional com qualidade cinematográfica original ainda é baixa. O diferencial será a exclusividade dos roteiros e o visual 3D altamente polido.",
+    "rpm_estimado": "R$ 6,00 a R$ 18,00 por mil visualizações (estimativa baseada no nicho de entretenimento e emoção no Brasil)",
     "riscos": [
-      "Risco de conteúdo repetitivo se os roteiros seguirem fórmulas idênticas; evitado variando os desfechos e mantendo originalidade.",
-      "Baixa retenção inicial; evitado com ganchos visuais e emocionais fortíssimos nos primeiros 2 segundos."
+      "Risco de conteúdo repetitivo se os roteiros seguirem fórmulas idênticas. Evitado criando variações profundas de enredo.",
+      "Baixa retenção se o gancho inicial falhar. Evitado com edição ágil nos primeiros 2 segundos."
     ],
     "nota": 9,
-    "veredito": "Vale muito a pena devido ao alto potencial de compartilhamento, desde que mantenha a altíssima qualidade visual proposta e roteiros 100% originais para evitar problemas de monetização."
+    "veredito": "Vale muito a pena devido ao alto potencial de compartilhamento, desde que mantenha rigor criativo nos roteiros originais e altíssima qualidade visual."
   },
   "arte": {
-    "estilo_imagem": "Cinematic 3D animation style, Pixar and DreamWorks aesthetic, highly expressive characters, soft volumetric dramatic lighting, rich detailed environments, shallow depth of field, harmonious warm color palette, smooth professional short film finish, vertical 9:16 aspect ratio, highly emotional framing, no text",
+    "estilo_imagem": "Cinematic 3D animation style, Pixar and Disney quality, highly expressive and charismatic characters, soft and dramatic volumetric lighting, rich detailed environments, shallow depth of field, emotional framing, smooth camera movements, warm and harmonious color palette, professional short film finish, no text",
     "personagem": {
       "modo": "por_video",
-      "pedido": "descreva o protagonista da história atual, incluindo suas características físicas, expressão facial emotiva, roupas simples e o contexto dramático da cena"
+      "descricao": "",
+      "pedido": "Descreva o protagonista do vídeo, sua aparência física expressiva, roupas adequadas ao seu contexto dramático e a emoção exata em seu rosto."
     },
     "cores": {
       "destaque": "#FFD700",
       "valor": "#FF6B6B"
     },
-    "perfil": "A stylized 3D glowing human heart intertwined with a gentle open book, vibrant purple and warm orange solid background, highly legible in a small circle, minimalist cinematic 3D style, no text",
-    "capa": "Cinematic 3D animation background showing a touching dramatic scene, rich lighting, with an empty horizontal band in the middle for the channel name, visually balanced elements on the left and right sides, vertical 9:16 adaptation to 16:9, no text",
-    "justificativa": "O visual cinematográfico 3D de alta qualidade gera forte empatia e atrai o público adulto que busca histórias emocionantes e reflexivas."
+    "perfil": "A glowing human heart intertwined with delicate digital fiber threads, warm cinematic lighting, solid deep teal background, clean vector style, highly readable in a small circle",
+    "capa": "Cinematic 3D animated scene of emotional storytelling, warm glowing light particles, empty horizontal band in the middle for channel name, detailed dramatic characters on the left and right sides, 16:9 aspect ratio",
+    "justificativa": "O estilo cinematográfico 3D acolhedor e dramático gera forte empatia e conexão emocional imediata, ideal para prender a atenção do público adulto e jovem."
   },
   "youtube": {
-    "descricao_canal": "Bem-vindo ao Alma Animada, o seu novo destino para mini histórias emocionantes que tocam o coração em poucos segundos. Aqui, utilizamos tecnologia de ponta para dar vida a animações 3D cinematográficas únicas, repletas de superação, empatia e reviravoltas inesquecíveis. Cada Short é cuidadosamente criado para proporcionar uma experiência profunda e reflexiva, ideal para quem busca boas lições de vida no dia a dia.\n\nNossa missão é conectar pessoas através de narrativas originais e visuais impressionantes, explorando os sentimentos mais genuínos da humanidade. Se você gosta de tramas envolventes que desafiam a perspectiva e celebram a generosidade e o amor, este é o seu lugar. Prepare-se para se emocionar com personagens marcantes e mensagens que ficam na memória muito depois que o vídeo termina.\n\nQueremos fazer parte da sua rotina e saber o que você pensa sobre cada reviravolta que apresentamos por aqui. Deixe seu comentário nos vídeos compartilhando qual foi a lição que mais te marcou ou qual história você gostaria de ver adaptada a seguir. Inscreva-se e venha fazer parte da nossa comunidade!",
+    "descricao_canal": "Bem-vindo ao Eco Emocional, o seu novo destino para mini-filmes em animação 3D que tocam profundamente o coração. Aqui você encontra histórias originais e emocionantes de superação, amor, empatia e reviravoltas surpreendentes que vão fazer você refletir sobre a vida em menos de um minuto.\n\nNossa missão é criar conexões reais através de narrativas visuais cinematográficas e cativantes, feitas para quem busca reflexão, inspiração e conteúdo de alta qualidade no formato YouTube Shorts.\n\nInscreva-se para não perder nenhuma jornada e deixe sua opinião nos comentários: qual história mais marcou você hoje?",
     "palavras_chave": [
-      "Alma Animada",
+      "animação 3d",
       "histórias emocionantes",
-      "animação 3D",
       "superação",
-      "lições de vida",
-      "shorts emocionais",
-      "reviravoltas",
+      "curta metragem",
+      "reflexão",
       "empatia",
-      "histórias com IA",
-      "reflexão"
+      "reviravolta",
+      "histórias com moral",
+      "eco emocional",
+      "shorts dramáticos"
     ],
     "categoria": "Entretenimento"
   },
   "cenas": [
     {
       "tipo": "gancho",
-      "pede": "apresentação de uma situação injusta ou desafiadora com forte apelo visual"
+      "pede": "Apresentar a situação limite ou o protagonista prestes a sofrer uma grande injustiça ou reviravolta."
     },
     {
       "tipo": "lista",
-      "titulo": "O DESAFIO",
-      "pede": "detalhes breves da luta do protagonista"
+      "titulo": "O DILEMA",
+      "pede": "Mostrar em até 2 itens rápidos o obstáculo ou a atitude egoísta de terceiros."
     },
     {
       "tipo": "destaque",
-      "titulo": "A REVIRAVOLTA",
-      "pede": "o momento em que tudo muda de forma surpreendente"
+      "titulo": "A REVELAÇÃO",
+      "pede": "A frase de impacto que muda completamente a percepção da história."
     },
     {
-      "tipo": "destaque",
-      "titulo": "LIÇÃO",
-      "pede": "a revelação do verdadeiro valor ou sentimento envolvido"
+      "tipo": "lista",
+      "titulo": "A MUDANÇA",
+      "pede": "Mostrar a consequência positiva do ato de empatia ou generosidade."
     },
     {
       "tipo": "fim"

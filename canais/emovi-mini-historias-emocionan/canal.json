@@ -1,37 +1,38 @@
 {
-  "nome": "Alma Animada",
+  "nome": "Eco Emocional",
   "ativo": false,
-  "handle": "@almaanimadabr",
-  "descricao_curta": "Histórias que tocam a alma em segundos.",
+  "handle": "@ecoemocional",
+  "descricao_curta": "Histórias que tocam e transformam.",
   "rotulo_tema": "História",
-  "contexto": "Canal Alma Animada. Produz mini histórias emocionais em 3D cinematográfico com foco em superação, empatia e reviravoltas para emocionar e fazer refletir.",
-  "publico": "Adultos e jovens de 18 a 44 anos que buscam reflexão e boas histórias.",
-  "tom": "Emocionante, dramático, acolhedor e reflexivo.",
-  "regras_extra": "- Mantenha o foco em reviravoltas impactantes e lições de moral.\n- Garanta que o gancho inicial aconteça nos primeiros 2 segundos.\n- Use linguagem acessível e carregada de emoção.",
-  "estilo_imagem": "Cinematic 3D animation style, Pixar and DreamWorks aesthetic, highly expressive characters, soft volumetric dramatic lighting, rich detailed environments, shallow depth of field, harmonious warm color palette, smooth professional short film finish, vertical 9:16 aspect ratio, highly emotional framing, no text",
+  "contexto": "Canal Eco Emocional (@ecoemocional): produz mini-filmes 3D verticais focados em superação, empatia e reviravoltas para emocionar e gerar reflexão.",
+  "publico": "Adultos e jovens conectados que buscam histórias rápidas de superação e conexão humana.",
+  "tom": "Emocionante, dramático, acolhedor e reflexivo",
+  "regras_extra": "- Crie sempre histórias fictícias originais e envolventes.\n- Mantenha o foco em dilemas humanos e finais surpreendentes.\n- Garanta que a transição entre o conflito e a reviravolta seja fluida.\n- Use linguagem acessível, porém madura e tocante.",
+  "estilo_imagem": "Cinematic 3D animation style, Pixar and Disney quality, highly expressive and charismatic characters, soft and dramatic volumetric lighting, rich detailed environments, shallow depth of field, emotional framing, smooth camera movements, warm and harmonious color palette, professional short film finish, no text",
   "personagem": {
     "modo": "por_video",
-    "pedido": "descreva o protagonista da história atual, incluindo suas características físicas, expressão facial emotiva, roupas simples e o contexto dramático da cena"
+    "descricao": "",
+    "pedido": "Descreva o protagonista do vídeo, sua aparência física expressiva, roupas adequadas ao seu contexto dramático e a emoção exata em seu rosto."
   },
   "cenas": [
     {
       "tipo": "gancho",
-      "pede": "apresentação de uma situação injusta ou desafiadora com forte apelo visual"
+      "pede": "Apresentar a situação limite ou o protagonista prestes a sofrer uma grande injustiça ou reviravolta."
     },
     {
       "tipo": "lista",
-      "titulo": "O DESAFIO",
-      "pede": "detalhes breves da luta do protagonista"
+      "titulo": "O DILEMA",
+      "pede": "Mostrar em até 2 itens rápidos o obstáculo ou a atitude egoísta de terceiros."
     },
     {
       "tipo": "destaque",
-      "titulo": "A REVIRAVOLTA",
-      "pede": "o momento em que tudo muda de forma surpreendente"
+      "titulo": "A REVELAÇÃO",
+      "pede": "A frase de impacto que muda completamente a percepção da história."
     },
     {
-      "tipo": "destaque",
-      "titulo": "LIÇÃO",
-      "pede": "a revelação do verdadeiro valor ou sentimento envolvido"
+      "tipo": "lista",
+      "titulo": "A MUDANÇA",
+      "pede": "Mostrar a consequência positiva do ato de empatia ou generosidade."
     },
     {
       "tipo": "fim"
@@ -39,13 +40,13 @@
   ],
   "conferencia": {
     "passadas": 3,
-    "contexto": "Você confere fatos da narrativa emocional e garante que a lição de moral toque o espectador."
+    "contexto": "Você confere fatos de coerência emocional, ritmo de retenção e originalidade do enredo deste nicho."
   },
   "fim": {
-    "titulo": "ALMA ANIMADA",
-    "fala": "Curta se essa história te tocou, siga o canal para mais mini histórias e comente qual lição você tirou daqui.",
+    "titulo": "ECO EMOCIONAL",
+    "fala": "Curta se essa história te tocou, siga o canal para mais mini-filmes e comente: qual lição você tirou daqui?",
     "chamada_tela": "CURTA  •  SIGA  •  COMENTE",
-    "pergunta_tela": "Qual sua parte favorita?"
+    "pergunta_tela": "Qual lição fica?"
   },
   "plugins": [],
   "campos_fila": [
@@ -60,18 +61,18 @@
     "valor": "#FF6B6B"
   },
   "marca": {
-    "perfil": "A stylized 3D glowing human heart intertwined with a gentle open book, vibrant purple and warm orange solid background, highly legible in a small circle, minimalist cinematic 3D style, no text",
-    "capa": "Cinematic 3D animation background showing a touching dramatic scene, rich lighting, with an empty horizontal band in the middle for the channel name, visually balanced elements on the left and right sides, vertical 9:16 adaptation to 16:9, no text"
+    "perfil": "A glowing human heart intertwined with delicate digital fiber threads, warm cinematic lighting, solid deep teal background, clean vector style, highly readable in a small circle",
+    "capa": "Cinematic 3D animated scene of emotional storytelling, warm glowing light particles, empty horizontal band in the middle for channel name, detailed dramatic characters on the left and right sides, 16:9 aspect ratio"
   },
   "youtube": {
     "tags_base": [
       "histórias emocionantes",
       "superação",
       "animação 3d",
-      "lição de vida",
-      "alma animada"
+      "reflexão",
+      "reviravolta"
     ],
-    "rodape": "Inscreva-se no canal Alma Animada para mais histórias que tocam o coração e trazem reflexões profundas."
+    "rodape": "Inscreva-se no Eco Emocional para mais histórias que tocam e transformam."
   },
   "telegram": ""
 }
