@@ -1,0 +1,77 @@
+{
+  "nome": "Alma Animada",
+  "ativo": false,
+  "handle": "@almaanimadabr",
+  "descricao_curta": "Histórias que tocam a alma em segundos.",
+  "rotulo_tema": "História",
+  "contexto": "Canal Alma Animada. Produz mini histórias emocionais em 3D cinematográfico com foco em superação, empatia e reviravoltas para emocionar e fazer refletir.",
+  "publico": "Adultos e jovens de 18 a 44 anos que buscam reflexão e boas histórias.",
+  "tom": "Emocionante, dramático, acolhedor e reflexivo.",
+  "regras_extra": "- Mantenha o foco em reviravoltas impactantes e lições de moral.\n- Garanta que o gancho inicial aconteça nos primeiros 2 segundos.\n- Use linguagem acessível e carregada de emoção.",
+  "estilo_imagem": "Cinematic 3D animation style, Pixar and DreamWorks aesthetic, highly expressive characters, soft volumetric dramatic lighting, rich detailed environments, shallow depth of field, harmonious warm color palette, smooth professional short film finish, vertical 9:16 aspect ratio, highly emotional framing, no text",
+  "personagem": {
+    "modo": "por_video",
+    "pedido": "descreva o protagonista da história atual, incluindo suas características físicas, expressão facial emotiva, roupas simples e o contexto dramático da cena"
+  },
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "pede": "apresentação de uma situação injusta ou desafiadora com forte apelo visual"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "O DESAFIO",
+      "pede": "detalhes breves da luta do protagonista"
+    },
+    {
+      "tipo": "destaque",
+      "titulo": "A REVIRAVOLTA",
+      "pede": "o momento em que tudo muda de forma surpreendente"
+    },
+    {
+      "tipo": "destaque",
+      "titulo": "LIÇÃO",
+      "pede": "a revelação do verdadeiro valor ou sentimento envolvido"
+    },
+    {
+      "tipo": "fim"
+    }
+  ],
+  "conferencia": {
+    "passadas": 3,
+    "contexto": "Você confere fatos da narrativa emocional e garante que a lição de moral toque o espectador."
+  },
+  "fim": {
+    "titulo": "ALMA ANIMADA",
+    "fala": "Curta se essa história te tocou, siga o canal para mais mini histórias e comente qual lição você tirou daqui.",
+    "chamada_tela": "CURTA  •  SIGA  •  COMENTE",
+    "pergunta_tela": "Qual sua parte favorita?"
+  },
+  "plugins": [],
+  "campos_fila": [
+    "tema"
+  ],
+  "voz": "pt-BR-Neural2-B",
+  "provedor_voz": "google",
+  "shorts_por_dia": 1,
+  "cloudflare": "",
+  "cores": {
+    "destaque": "#FFD700",
+    "valor": "#FF6B6B"
+  },
+  "marca": {
+    "perfil": "A stylized 3D glowing human heart intertwined with a gentle open book, vibrant purple and warm orange solid background, highly legible in a small circle, minimalist cinematic 3D style, no text",
+    "capa": "Cinematic 3D animation background showing a touching dramatic scene, rich lighting, with an empty horizontal band in the middle for the channel name, visually balanced elements on the left and right sides, vertical 9:16 adaptation to 16:9, no text"
+  },
+  "youtube": {
+    "tags_base": [
+      "histórias emocionantes",
+      "superação",
+      "animação 3d",
+      "lição de vida",
+      "alma animada"
+    ],
+    "rodape": "Inscreva-se no canal Alma Animada para mais histórias que tocam o coração e trazem reflexões profundas."
+  },
+  "telegram": ""
+}

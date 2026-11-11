@@ -1,0 +1,66 @@
+{
+  "personagem": "Homem de meia-idade, barba grisalha e expressão cansada mas honesta, vestindo roupas remendadas e limpas, segurando uma maleta preta com olhar surpreso em uma praça movimentada.",
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "titulo": "UMA ESCOLHA DIFÍCIL",
+      "fala": "Com fome e frio, ele encontrou uma maleta cheia de dinheiro na praça vazia. A tentação foi gigante, mas a consciência falou mais alto.",
+      "imagem": "Close-up vertical 3D cinematic of a poor middle-aged man with a gray beard and humble patched clothes, looking down with a mix of surprise and honesty at an open black briefcase full of stacked cash bills, sitting on a worn park bench at dusk, dramatic lighting, emotional expression.",
+      "id": "c0-gancho"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "O DESAFIO",
+      "itens": [
+        "Fome extrema",
+        "Frio intenso",
+        "Incerteza do amanhã"
+      ],
+      "fala": "A pobreza trazia dores diárias. Cada nota ali representava meses de comida e teto, mas o preço a pagar seria a própria paz de espírito.",
+      "imagem": "Vertical 3D cinematic shot of the humble man sitting alone on a park bench at night, shivering from cold, clutching his worn jacket tight, looking intently at a black briefcase beside him under a dim streetlamp.",
+      "id": "c1-lista"
+    },
+    {
+      "tipo": "destaque",
+      "titulo": "A REVIRAVOLTA",
+      "texto": "O dono apareceu chorando e ofereceu uma recompensa inesperada",
+      "fala": "Em vez de fugir, ele esperou horas pelo dono. Quando o empresário desesperado apareceu, a honestidade transformou duas vidas para sempre.",
+      "imagem": "Vertical 3D cinematic shot of the humble man handing a black briefcase to a wealthy crying businessman in a suit, in a busy city square, warm golden hour lighting, emotional and touching moment.",
+      "id": "c2-destaque",
+      "itens": []
+    },
+    {
+      "tipo": "destaque",
+      "titulo": "LIÇÃO",
+      "texto": "O verdadeiro valor de um homem reside em sua integridade",
+      "fala": "Dinheiro compra muitas coisas, mas a dignidade e a paz de espírito não têm preço. Escolher o bem sempre deixa a alma leve.",
+      "imagem": "Vertical 3D cinematic medium shot of the middle-aged man smiling warmly with tears in his eyes, now wearing a clean jacket, standing in front of a cozy small bakery he can finally afford, heartwarming atmosphere.",
+      "id": "c3-destaque",
+      "itens": []
+    },
+    {
+      "tipo": "fim",
+      "imagem": "Vertical 3D cinematic closing shot of a glowing heart symbol floating gently above a park bench at sunset, warm cinematic lighting, peaceful and emotional ambiance, highly detailed.",
+      "id": "c4-fim",
+      "titulo": "ALMA ANIMADA",
+      "fala": "Curta se essa história te tocou, siga o canal para mais mini histórias e comente qual lição você tirou daqui."
+    }
+  ],
+  "youtube": {
+    "titulo": "Ele achou uma maleta cheia de dinheiro e surpreendeu a todos",
+    "descricao": "Um homem em situação de rua encontra uma fortuna perdida, mas sua escolha prova que a verdadeira riqueza está na honestidade. Uma história emocionante sobre empatia e caráter.",
+    "tags": [
+      "história emocionante",
+      "superação",
+      "reflexão",
+      "honestidade",
+      "histórias emocionantes",
+      "animação 3d",
+      "lição de vida",
+      "alma animada"
+    ]
+  },
+  "item": {
+    "tema": "O mendigo que devolveu a maleta cheia de dinheiro"
+  }
+}

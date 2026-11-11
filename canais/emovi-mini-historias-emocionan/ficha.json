@@ -1,0 +1,89 @@
+{
+  "ideia": "EMOVI | Mini Histórias Emocionantes. Canal dark de animações 3D cinematográficas criadas com auxílio de inteligência artificial. Produzir Shorts originais de 35 a 60 segundos, com histórias fictícias de superação, amor, empatia, injustiça, generosidade e reviravoltas surpreendentes. Cada vídeo deve começar com um gancho forte nos primeiros 2 segundos, desenvolver um conflito emocional, apresentar uma revelação marcante e terminar com uma mensagem que desperte reflexão. Priorizar retenção, compartilhamentos e identidade visual consistente. Histórias originais, sem copiar roteiros ou personagens de terceiros.",
+  "estrategia": {
+    "nomes": [
+      "Alma Animada",
+      "EmocionAumente",
+      "Eco da Emoção"
+    ],
+    "nome": "Alma Animada",
+    "handles": [
+      "@almaanimadabr",
+      "@canalocultoia",
+      "@emocionabr"
+    ],
+    "slogan": "Histórias que tocam a alma em segundos.",
+    "publico": "Adultos e jovens de 18 a 44 anos que buscam reflexão e boas histórias.",
+    "promessa": "Uma lição de vida emocionante e reviravoltas inusitadas a cada Short.",
+    "formato_short": "Animação 3D cinematográfica vertical com narrativa dramática e áudio envolvente. Termina com um gancho reflexivo que incentiva o compartilhamento.",
+    "ideias_video_longo": [
+      "A jornada completa de superação dos personagens mais queridos",
+      "Bastidores: Como criamos mundos 3D e roteiros que emocionam com IA",
+      "Compilação das melhores reviravoltas e lições de moral do canal"
+    ],
+    "concorrencia": "Há canais de histórias fictícias em alta, mas a maioria usa visuais 2D genéricos. Este canal se diferencia pela qualidade 3D cinematográfica premium e roteiros originais focados em empatia.",
+    "rpm_estimado": "R$ 6,00 a R$ 15,00 por mil visualizações em vídeos longos (estimativa baseada no nicho de entretenimento emocional no Brasil).",
+    "riscos": [
+      "Risco de conteúdo repetitivo se os roteiros seguirem fórmulas idênticas; evitado variando os desfechos e mantendo originalidade.",
+      "Baixa retenção inicial; evitado com ganchos visuais e emocionais fortíssimos nos primeiros 2 segundos."
+    ],
+    "nota": 9,
+    "veredito": "Vale muito a pena devido ao alto potencial de compartilhamento, desde que mantenha a altíssima qualidade visual proposta e roteiros 100% originais para evitar problemas de monetização."
+  },
+  "arte": {
+    "estilo_imagem": "Cinematic 3D animation style, Pixar and DreamWorks aesthetic, highly expressive characters, soft volumetric dramatic lighting, rich detailed environments, shallow depth of field, harmonious warm color palette, smooth professional short film finish, vertical 9:16 aspect ratio, highly emotional framing, no text",
+    "personagem": {
+      "modo": "por_video",
+      "pedido": "descreva o protagonista da história atual, incluindo suas características físicas, expressão facial emotiva, roupas simples e o contexto dramático da cena"
+    },
+    "cores": {
+      "destaque": "#FFD700",
+      "valor": "#FF6B6B"
+    },
+    "perfil": "A stylized 3D glowing human heart intertwined with a gentle open book, vibrant purple and warm orange solid background, highly legible in a small circle, minimalist cinematic 3D style, no text",
+    "capa": "Cinematic 3D animation background showing a touching dramatic scene, rich lighting, with an empty horizontal band in the middle for the channel name, visually balanced elements on the left and right sides, vertical 9:16 adaptation to 16:9, no text",
+    "justificativa": "O visual cinematográfico 3D de alta qualidade gera forte empatia e atrai o público adulto que busca histórias emocionantes e reflexivas."
+  },
+  "youtube": {
+    "descricao_canal": "Bem-vindo ao Alma Animada, o seu novo destino para mini histórias emocionantes que tocam o coração em poucos segundos. Aqui, utilizamos tecnologia de ponta para dar vida a animações 3D cinematográficas únicas, repletas de superação, empatia e reviravoltas inesquecíveis. Cada Short é cuidadosamente criado para proporcionar uma experiência profunda e reflexiva, ideal para quem busca boas lições de vida no dia a dia.\n\nNossa missão é conectar pessoas através de narrativas originais e visuais impressionantes, explorando os sentimentos mais genuínos da humanidade. Se você gosta de tramas envolventes que desafiam a perspectiva e celebram a generosidade e o amor, este é o seu lugar. Prepare-se para se emocionar com personagens marcantes e mensagens que ficam na memória muito depois que o vídeo termina.\n\nQueremos fazer parte da sua rotina e saber o que você pensa sobre cada reviravolta que apresentamos por aqui. Deixe seu comentário nos vídeos compartilhando qual foi a lição que mais te marcou ou qual história você gostaria de ver adaptada a seguir. Inscreva-se e venha fazer parte da nossa comunidade!",
+    "palavras_chave": [
+      "Alma Animada",
+      "histórias emocionantes",
+      "animação 3D",
+      "superação",
+      "lições de vida",
+      "shorts emocionais",
+      "reviravoltas",
+      "empatia",
+      "histórias com IA",
+      "reflexão"
+    ],
+    "categoria": "Entretenimento"
+  },
+  "cenas": [
+    {
+      "tipo": "gancho",
+      "pede": "apresentação de uma situação injusta ou desafiadora com forte apelo visual"
+    },
+    {
+      "tipo": "lista",
+      "titulo": "O DESAFIO",
+      "pede": "detalhes breves da luta do protagonista"
+    },
+    {
+      "tipo": "destaque",
+      "titulo": "A REVIRAVOLTA",
+      "pede": "o momento em que tudo muda de forma surpreendente"
+    },
+    {
+      "tipo": "destaque",
+      "titulo": "LIÇÃO",
+      "pede": "a revelação do verdadeiro valor ou sentimento envolvido"
+    },
+    {
+      "tipo": "fim"
+    }
+  ],
+  "estilo_pedido": "Animação 3D cinematográfica premium, personagens expressivos e carismáticos, iluminação suave e dramática, cenários detalhados, cores harmoniosas, profundidade de campo, enquadramentos emocionais e movimentos de câmera suaves. Visual consistente em todas as cenas, formato vertical 9:16, qualidade profissional de curta-metragem animado. Evitar aparência artificial genérica.",
+  "voz": "pt-BR-Neural2-B"
+}
