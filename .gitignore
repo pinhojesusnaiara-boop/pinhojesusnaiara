@@ -1,0 +1,4 @@
+out/
+audio/
+__pycache__/
+*.pyc

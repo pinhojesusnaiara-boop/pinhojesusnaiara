@@ -1,0 +1,91 @@
+name: Rotina diária
+run-name: "Rotina ${{ inputs.canal || 'todos' }} ${{ inputs.formato || 'auto' }}"
+# Logo depois que a cota gratuita de imagens renova (00:00 UTC = 21:00 em Brasília).
+# Três horários: se o GitHub pular ou atrasar um, o seguinte faz; cada canal só produz uma vez por dia.
+on:
+  schedule:
+    - cron: "17 0 * * *"
+    - cron: "37 1 * * *"
+    - cron: "47 2 * * *"
+  workflow_dispatch:
+    inputs:
+      canal:
+        description: "id do canal (vazio = todos os ativos)"
+        required: false
+        default: ""
+      formato:
+        description: "auto (rotina do dia) ou short (força um Short agora)"
+        type: choice
+        default: auto
+        options: [auto, short]
+
+concurrency:
+  group: fabrica
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  listar:
+    runs-on: ubuntu-latest
+    outputs:
+      canais: ${{ steps.l.outputs.canais }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: l
+        run: python3 motor/listar.py "${{ inputs.canal }}" >> "$GITHUB_OUTPUT"
+
+  rotina:
+    needs: listar
+    if: needs.listar.outputs.canais != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        canal: ${{ fromJson(needs.listar.outputs.canais) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: FedericoCarboni/setup-ffmpeg@v3
+      - uses: actions/cache@v4
+        with:
+          path: ~/.u2net
+          key: u2net-v1
+      - run: pip install -q -r requirements.txt
+      - name: Produzir
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets[format('CLOUDFLARE_ACCOUNT_ID{0}', matrix.canal.cf)] }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets[format('CLOUDFLARE_API_TOKEN{0}', matrix.canal.cf)] }}
+          TELEGRAM_TOKEN: ${{ secrets[format('TELEGRAM_TOKEN_{0}', matrix.canal.tg)] }}
+          TELEGRAM_CHAT_ID: ${{ secrets[format('TELEGRAM_CHAT_ID_{0}', matrix.canal.tg)] }}
+        run: python motor/rotina.py --canal "${{ matrix.canal.id }}" --formato "${{ inputs.formato || 'auto' }}"
+      - name: Guardar fila e estado
+        if: always()
+        run: |
+          git config user.name "fabrica-bot"
+          git config user.email "fabrica-bot@users.noreply.github.com"
+          git add "canais/${{ matrix.canal.id }}"
+          git diff --cached --quiet && exit 0
+          git commit -m "${{ matrix.canal.id }}: rotina $(TZ=America/Sao_Paulo date +%d/%m)"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && exit 0; sleep $((i * 3)); done
+          exit 1
+      - name: Avisar falha inesperada
+        if: failure()
+        env:
+          TG: ${{ secrets[format('TELEGRAM_TOKEN_{0}', matrix.canal.tg)] }}
+          CHAT: ${{ secrets[format('TELEGRAM_CHAT_ID_{0}', matrix.canal.tg)] }}
+        run: |
+          if [ ! -f "out/.falha-avisada-${{ matrix.canal.id }}" ] && [ -n "$TG" ]; then
+            curl -s "https://api.telegram.org/bot$TG/sendMessage" -d chat_id="$CHAT" \
+              --data-urlencode text="⚠️ ${{ matrix.canal.id }}: a rotina falhou antes de terminar. Veja ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > /dev/null
+          fi

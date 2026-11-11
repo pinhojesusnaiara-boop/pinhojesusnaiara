@@ -1,0 +1,97 @@
+name: Fábrica
+run-name: "Fábrica: ${{ inputs.acao }} ${{ inputs.canal }}"
+# Chamado pela página da Fábrica. Etapas:
+#   nova   -> estrategista, roteirista, diretor de arte e operador montam o canal; depois marca e prévia
+#   marca  -> refaz foto de perfil e capa
+#   previa -> refaz o Short de teste
+#   temas  -> acrescenta temas na fila
+on:
+  workflow_dispatch:
+    inputs:
+      acao:
+        type: choice
+        options: [nova, marca, previa, temas]
+        default: nova
+      canal:
+        description: "id do canal (letras minúsculas e hífens)"
+        required: true
+      ideia:
+        required: false
+        default: ""
+      estilo:
+        required: false
+        default: ""
+      voz:
+        required: false
+        default: ""
+      publico:
+        required: false
+        default: ""
+      quantos:
+        required: false
+        default: "30"
+
+concurrency:
+  group: fabrica
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fabrica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GOOGLE_TTS_KEY: ${{ secrets.GOOGLE_TTS_KEY }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CANAL: ${{ inputs.canal }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: FedericoCarboni/setup-ffmpeg@v3
+      - uses: actions/cache@v4
+        with:
+          path: ~/.u2net
+          key: u2net-v1
+      - name: Conferir o nome do canal
+        run: |
+          echo "$CANAL" | grep -Eq '^[a-z0-9][a-z0-9-]{1,39}$' || { echo "Use só letras minúsculas, números e hífens."; exit 1; }
+      - run: pip install -q -r requirements.txt
+      - name: Montar o canal (agentes)
+        if: inputs.acao == 'nova'
+        env:
+          IDEIA: ${{ inputs.ideia }}
+          ESTILO: ${{ inputs.estilo }}
+          VOZ: ${{ inputs.voz }}
+          PUBLICO: ${{ inputs.publico }}
+        run: python motor/ficha.py --canal "$CANAL" --ideia "$IDEIA" --estilo "$ESTILO" --voz "$VOZ" --publico "$PUBLICO"
+      - name: Foto de perfil e capa
+        if: inputs.acao == 'nova' || inputs.acao == 'marca'
+        continue-on-error: true
+        run: python motor/marca.py --canal "$CANAL"
+      - name: Short de teste
+        if: inputs.acao == 'nova' || inputs.acao == 'previa'
+        continue-on-error: true
+        run: python motor/rotina.py --canal "$CANAL" --formato previa
+      - name: Mais temas
+        if: inputs.acao == 'temas'
+        run: python motor/ficha.py --canal "$CANAL" --mais-temas "${{ inputs.quantos }}"
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "fabrica-bot"
+          git config user.email "fabrica-bot@users.noreply.github.com"
+          [ -d "canais/$CANAL" ] || exit 0
+          git add "canais/$CANAL"
+          git diff --cached --quiet && exit 0
+          git commit -m "$CANAL: fábrica (${{ inputs.acao }})"
+          for i in 1 2 3 4 5; do git pull --rebase -q && git push -q && exit 0; sleep $((i * 3)); done
+          exit 1
